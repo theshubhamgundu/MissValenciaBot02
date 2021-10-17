@@ -102,7 +102,7 @@ def totranslate(bot: Bot, update: Update):
                 message.reply_text("Translated from `{}` to `{}`:\n`{}`".format(source_lang, dest_lang, tekstr.text), parse_mode=ParseMode.MARKDOWN)
 
     except IndexError:
-        update.effective_message.reply_text("Reply to messages or write messages from other languages ​​for translating into the intended language\n\nExample: `/tr en ml` to translate from English to Malayalam\nOr use: `/tr ml` for automatic detection and translating it into Malayalam.\nSee [List of Language Codes](https://telegra.ph/%C5%9E%E0%B8%AA%E2%84%9D%E0%B8%AA%D1%92-06-28) for a list of language codes.", parse_mode="markdown", disable_web_page_preview=True)
+        update.effective_message.reply_text("Reply to messages or write messages from other languages ​​for translating into the intended language\n\nExample: `/tr en hi` to translate from English to Hindi\nOr use: `/tr hi` for automatic detection and translating it into Hindi.\nSee [List of Language Codes](https://telegra.ph/m%CE%B9%D1%95%D1%95-%CE%BD%CE%B1%E2%84%93yei%CF%B2%CE%B9%CE%B1-10-17-2) for a list of language codes.", parse_mode="markdown", disable_web_page_preview=True)
     except ValueError:
         update.effective_message.reply_text("The intended language is not found!")
     else:
