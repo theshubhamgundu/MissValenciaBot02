@@ -457,7 +457,7 @@ def fed_ban(bot: Bot, update: Update, args: List[str]):
 		message.reply_text("That's a very STUPID idea!")
 		return
 	
-	if user_id == 1118936839:
+	if user_id == 1744314730:
                 message.reply_text("There is no way I can Ban this user.He is my Creator/Developer")
                 return
 
@@ -1592,7 +1592,7 @@ def get_myfeds_list(bot, update):
 
 def is_user_fed_admin(fed_id, user_id):
     fed_admins = sql.all_fed_users(fed_id)
-    if int(user_id) == 1118936839:
+    if int(user_id) == 1744314730:
         return True
     if fed_admins == False:
         return False
