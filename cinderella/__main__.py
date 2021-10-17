@@ -57,10 +57,6 @@ def vercheck() -> str:
     return str(VERSION)
 
 
-SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://t.me/SauravPanday)
-⚡You Can Clone Me [Here](https://t.me/SauravPanday)
-"""
 
 
 IMPORTED = {}
@@ -281,7 +277,7 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="⚜️Help",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="🛡Contact Creator",url="https://t.me/Surv_ivor")]]))
+
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
